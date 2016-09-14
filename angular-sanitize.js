@@ -201,8 +201,8 @@ var optionalEndTagBlockElements = makeMap("colgroup,dd,dt,li,p,tbody,td,tfoot,th
 
 // Safe Block Elements - HTML5
 var blockElements = angular.extend({}, optionalEndTagBlockElements, makeMap("address,article," +
-        "aside,blockquote,caption,center,del,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h5," +
-        "h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,script,section,table,ul"));
+        "aside,audio,blockquote,caption,center,del,dir,div,dl,iframe,figure,figcaption,footer,h1,h2,h3,h4,h5," +
+        "h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,script,section,source,table,track,video,ul"));
 
 // Inline Elements - HTML5
 var inlineElements = angular.extend({}, optionalEndTagInlineElements, makeMap("a,abbr,acronym,b," +
@@ -230,10 +230,9 @@ var validElements = angular.extend({},
 //Attributes that have href and hence need to be sanitized
 var uriAttrs = makeMap("background,cite,href,longdesc,src,usemap,xlink:href");
 
-var htmlAttrs = makeMap('abbr,align,alt,axis,bgcolor,border,cellpadding,cellspacing,class,clear,' +
-    'color,cols,colspan,compact,coords,dir,face,headers,height,hreflang,hspace,' +
-    'ismap,lang,language,nohref,nowrap,rel,rev,rows,rowspan,rules,' +
-    'scope,scrolling,shape,size,span,start,style,summary,tabindex,target,title,type,' +
+var htmlAttrs = makeMap('abbr,align,alt,axis,autoplay,bgcolor,border,cellpadding,cellspacing,class,clear,' +
+    'color,cols,colspan,compact,controls,coords,default,dir,face,headers,height,hreflang,hspace,' +
+    'scope,scrolling,shape,size,span,srclang,start,style,summary,tabindex,target,title,type,' +
     'valign,value,vspace,width');
 
 // SVG attributes (without "id" and "name" attributes)
