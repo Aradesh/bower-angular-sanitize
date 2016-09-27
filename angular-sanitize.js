@@ -246,8 +246,8 @@ function $SanitizeProvider() {
 
   // Safe Block Elements - HTML5
   var blockElements = extend({}, optionalEndTagBlockElements, toMap("address,article," +
-          "aside,blockquote,caption,center,del,dir,div,dl,figure,figcaption,footer,h1,h2,h3,h4,h5," +
-          "h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,section,table,ul"));
+          "aside,audio,blockquote,caption,center,del,dir,div,dl,iframe,figure,figcaption,footer,h1,h2,h3,h4,h5," +
+          "h6,header,hgroup,hr,ins,map,menu,nav,ol,pre,section,source,table,track,video,ul"));
 
   // Inline Elements - HTML5
   var inlineElements = extend({}, optionalEndTagInlineElements, toMap("a,abbr,acronym,b," +
@@ -274,10 +274,10 @@ function $SanitizeProvider() {
   //Attributes that have href and hence need to be sanitized
   var uriAttrs = toMap("background,cite,href,longdesc,src,xlink:href");
 
-  var htmlAttrs = toMap('abbr,align,alt,axis,bgcolor,border,cellpadding,cellspacing,class,clear,' +
-      'color,cols,colspan,compact,coords,dir,face,headers,height,hreflang,hspace,' +
-      'ismap,lang,language,nohref,nowrap,rel,rev,rows,rowspan,rules,' +
-      'scope,scrolling,shape,size,span,start,summary,tabindex,target,title,type,' +
+  var htmlAttrs = toMap('abbr,align,alt,axis,autoplay,bgcolor,border,cellpadding,cellspacing,class,clear,' +
+      'color,cols,colspan,compact,controls,coords,default,dir,face,headers,height,hreflang,hspace,' +
+      'ismap,kind,lang,language,loop,media,muted,nohref,nowrap,rel,rev,rows,rowspan,rules,param,preload,poster,' +
+      'scope,scrolling,shape,size,span,srclang,start,style,summary,tabindex,target,title,type,' +
       'valign,value,vspace,width');
 
   // SVG attributes (without "id" and "name" attributes)
