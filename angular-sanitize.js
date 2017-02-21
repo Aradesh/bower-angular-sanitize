@@ -274,8 +274,8 @@ function $SanitizeProvider() {
   //Attributes that have href and hence need to be sanitized
   var uriAttrs = toMap("background,cite,href,longdesc,src,xlink:href");
 
-  var htmlAttrs = toMap('abbr,align,alt,axis,autoplay,bgcolor,border,cellpadding,cellspacing,class,clear,' +
-      'color,cols,colspan,compact,controls,coords,default,dir,face,headers,height,hreflang,hspace,' +
+  var htmlAttrs = toMap('abbr,align,allowfullscreen,alt,axis,autoplay,bgcolor,border,cellpadding,cellspacing,class,clear,' +
+      'color,cols,colspan,compact,controls,coords,default,dir,face,frameborder,headers,height,hreflang,hspace,' +
       'ismap,kind,lang,language,loop,media,muted,nohref,nowrap,rel,rev,rows,rowspan,rules,param,preload,poster,' +
       'scope,scrolling,shape,size,span,srclang,start,style,summary,tabindex,target,title,type,' +
       'valign,value,vspace,width');
